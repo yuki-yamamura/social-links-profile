@@ -3,18 +3,20 @@ import SocialAccounts from './SocialLInk';
 
 import type { User } from '@/types/User';
 
+import styles from './index.module.scss';
+
 type Props = {
   user: User;
 };
 
 const Profile = ({ user }: Props) => (
-  <div>
+  <div className={styles.module}>
     <Avatar image={user.avatar} />
     <div>
-      <h2>{user.name}</h2>
-      <div>{user.location}</div>
+      <h2 className={styles.name}>{user.name}</h2>
+      <div className={styles.location}>{user.location}</div>
     </div>
-    <div>{user.bio}</div>
+    <div>{`"${user.bio}"`}</div>
     <SocialAccounts socialAccounts={user.socialAccounts} />
   </div>
 );

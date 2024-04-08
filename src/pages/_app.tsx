@@ -1,3 +1,4 @@
+import Layout from '@/components/Layout';
 import Head from 'next/head';
 
 import type { AppProps } from 'next/app';
@@ -13,7 +14,9 @@ const App = ({ Component, pageProps }: AppProps) => (
     <Head>
       <title>Frontend Mentor | Social links profile</title>
     </Head>
-    <Component {...pageProps} />
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
   </>
 );
 

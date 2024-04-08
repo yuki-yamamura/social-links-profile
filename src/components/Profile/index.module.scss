@@ -1,0 +1,23 @@
+@use '@/styles/colors' as *;
+
+.module {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  align-items: center;
+  width: 100%;
+  max-width: 384px;
+  padding: 2.5rem;
+  color: $white;
+  background-color: $dark-grey;
+  border-radius: 0.75rem;
+}
+
+.name {
+  font-weight: 600;
+}
+
+.location {
+  font-weight: 700;
+  color: $neon-green;
+}

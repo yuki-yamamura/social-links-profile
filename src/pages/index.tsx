@@ -2,6 +2,8 @@ import Profile from '@/components/Profile';
 
 import type { User } from '@/types/User';
 
+import styles from './index.module.scss';
+
 const Page = () => {
   const user: User = {
     name: 'Jessica Randall',
@@ -33,9 +35,9 @@ const Page = () => {
   };
 
   return (
-    <div>
+    <main className={styles.module}>
       <Profile user={user} />
-    </div>
+    </main>
   );
 };
 

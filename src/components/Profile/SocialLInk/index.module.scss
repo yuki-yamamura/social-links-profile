@@ -1,0 +1,28 @@
+@use '@/styles/colors' as *;
+
+.list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  width: 100%;
+}
+
+.listitem {
+  list-style: none;
+}
+
+.link {
+  display: block;
+  padding-block: 0.75rem;
+  color: $white;
+  text-align: center;
+  text-decoration: none;
+  background-color: $grey;
+  border-radius: 0.5rem;
+
+  &:focus,
+  &:hover {
+    color: $grey;
+    background-color: $neon-green;
+  }
+}

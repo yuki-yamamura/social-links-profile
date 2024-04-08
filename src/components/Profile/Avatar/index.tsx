@@ -1,11 +1,12 @@
+import styles from './index.module.scss';
+
 type Props = {
   image: string;
 };
 
 const Avatar = ({ image }: Props) => (
-  // todo: remove height and width
   // eslint-disable-next-line @next/next/no-img-element
-  <img src={image} alt="avatar" width={88} height={88} />
+  <img src={image} alt="avatar" className={styles.module} />
 );
 
 export default Avatar;
